@@ -2,8 +2,12 @@
   "name": "hello-world",
   "version": "0.0.1",
   "description": "A simple Hello World Node App",
+  "engines": {
+	  "node": "12.x"
+  },
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -11,7 +15,8 @@
     "url": "git+https://github.com/csc3221-master/node-hello-world.git"
   },
   "keywords": [
-    "nodejs"
+    "nodejs", 
+    "heroku"
   ],
   "author": "Carlos R. Arias",
   "license": "MIT",
@@ -20,3 +25,4 @@
   },
   "homepage": "https://github.com/csc3221-master/node-hello-world#readme"
 }
+
