@@ -1,6 +1,5 @@
 const http = require('http');
 
-const hostname = 'boiling-forest-17755.herokuapp.com';
 const port = process.env.PORT || 5000;
 
 const server = http.createServer((request, response) => {
@@ -9,7 +8,10 @@ const server = http.createServer((request, response) => {
 	response.end('Hello World\n\nCool!');
 });
 
-server.listen(port, hostname, () => {
-	console.log(`Server Running at host: ${hostname}:${port}`);
+server.listen(port, (err) => {
+	if (err) {
+		return console.log('Something went wrong ', err);
+	}
+	console.log(`Server Listening on: ${port}`);
 });
 
